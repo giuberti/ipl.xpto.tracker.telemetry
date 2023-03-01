@@ -1,0 +1,131 @@
+{
+	"info": {
+		"_postman_id": "c17e4c3d-86c5-436c-b585-27f62f100f42",
+		"name": "XPTO Tracking - Sensor",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "7681669"
+	},
+	"item": [
+		{
+			"name": "List Sensors",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/tracking/sensors",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"tracking",
+						"sensors"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Sensor",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/tracking/sensors/f8d6cede-e3dc-47c9-a61d-429f316c35cd",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"tracking",
+						"sensors",
+						"f8d6cede-e3dc-47c9-a61d-429f316c35cd"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Sensor",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Alface\",\r\n    \"sensor_type\": \"RPM\",\r\n    \"minValue\": 0.0,\r\n    \"maxValue\": 12.0,\r\n    \"unit\": \"rpms\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/tracking/sensors/f8d6cede-e3dc-47c9-a61d-429f316c35cf",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"tracking",
+						"sensors",
+						"f8d6cede-e3dc-47c9-a61d-429f316c35cf"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Sensor",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Alface3\",\r\n    \"sensor_type\": \"RPM\",\r\n    \"minValue\": 0.0,\r\n    \"maxValue\": 12.0,\r\n    \"unit\": \"rpms\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/tracking/sensors",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"tracking",
+						"sensors"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Sensor",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/tracking/sensors/1ba1aed6-a29e-4d0c-91db-3a89cef3af13",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"tracking",
+						"sensors",
+						"1ba1aed6-a29e-4d0c-91db-3a89cef3af13"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
